@@ -1,13 +1,15 @@
 require 'faker'
 
 # Create todo lists
-50.times do
-  TodoList.create(
-    todo_item:  Faker::Lorem.sentence,
-    content:   Faker::Lorem.paragraph 
+  list = TodoList.create( 
+    title:  Faker::Lorem.sentence,
+    description:   Faker::Lorem.paragraph 
   )
-end
-tasks = Task.all #unsure about this 
+
+  TodoItem.create(
+  	content: "here is some text",
+  	todo_list: list
+  	)
 
 
 puts "Seed finished"
