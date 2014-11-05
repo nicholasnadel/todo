@@ -9,7 +9,7 @@ class TodoItemsController < ApplicationController
 
 	def destroy
 		if @todo_item.destroy
-			flash[:success] = "Todo List item was deleted."
+			flash[:success] = "Murder Murder Murder Kill Kill Kill"
 		else
 			flash[:error] = "Todo List item could not be deleted."
 		end
