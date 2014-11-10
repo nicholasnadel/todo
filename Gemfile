@@ -7,6 +7,7 @@ source 'https://rubygems.org'
  gem 'pry-rails'
  gem 'better_errors'
  gem 'binding_of_caller'
+ gem 'whenever', :require => false
  
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
