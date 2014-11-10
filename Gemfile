@@ -4,7 +4,9 @@ source 'https://rubygems.org'
  gem 'faker'
  gem 'devise'
  gem 'figaro', '1.0'
-
+ gem 'pry-rails'
+ gem 'better_errors'
+ gem 'binding_of_caller'
  
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
