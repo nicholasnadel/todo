@@ -8,6 +8,9 @@ source 'https://rubygems.org'
  gem 'better_errors'
  gem 'binding_of_caller'
  gem 'whenever', :require => false
+ gem 'activesupport'
+
+
  
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
