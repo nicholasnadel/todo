@@ -2,6 +2,6 @@
     <div class="todo_item">
       <p style="opacity: 1;"><%= todo_item.content%> </p>
       <%= link_to "Mark Complete/Delete", [:todo_list, todo_item], method: :delete, data: { confirm: "Murder Murder Murder!!!" } %>
-      <p>Days remaining to complete task: <%= (7 - ((time_ago_in_words(@todo_list.created_at)).to_i)) %></p>
+      <p>Days remaining to complete task: <%= (6 - ((Time.now.to_date - todo_item.created_at.to_date).to_i)) %></p>
     </div>
 </div>
