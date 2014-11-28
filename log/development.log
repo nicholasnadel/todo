@@ -1,0 +1,763 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 20:30:50 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 22ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 20:58:25 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 47ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 20:58:25 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2014-11-27 20:58:30 -0800
+
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (7.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (35.5ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-11-27 20:58:36 -0800
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template welcome/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/home/nicholas/nickmarks/app/views"
+):
+  actionview (4.2.0.beta2) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0.beta2) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0.beta2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0.beta2) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0.beta2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0.beta2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0.beta2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0.beta2) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0.beta2) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0.beta2) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0.beta2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.0.beta2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0.beta2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0.beta2) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0.beta2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:114:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:114:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:231:in `block in halting'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:231:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:231:in `block in halting'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:231:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:231:in `block in halting'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:87:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:87:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0.beta2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0.beta2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0.beta2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0.beta2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0.beta2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0.beta2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0.beta2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0.beta2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0.beta2) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:72:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:72:in `dispatch'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  rack (1.6.0.beta2) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0.beta2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta2) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/missing_template.html.erb within rescues/layout (18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 21:02:52 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-27 21:02:57 -0800
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (4.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (22.9ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2014-11-27 21:03:04 -0800
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.3ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/welcome.css.scssc: can't dump anonymous class #<Class:0x000000054fb3e8>
+
+Completed 200 OK in 524ms (Views: 523.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome-c15e1c77cb5b3534b610348cb9f3c56d.css?body=1" for 127.0.0.1 at 2014-11-27 21:03:05 -0800
+
+
+Started GET "/assets/application-6104dfe918f9daf733a0654c847046eb.css?body=1" for 127.0.0.1 at 2014-11-27 21:03:05 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-11-27 21:03:05 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-11-27 21:03:05 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-11-27 21:03:05 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-11-27 21:03:05 -0800
+
+
+Started GET "/assets/application-c93deb6ccc581da12913fb96a670a5bc.js?body=1" for 127.0.0.1 at 2014-11-27 21:03:05 -0800
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-11-27 21:03:07 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-11-27 21:03:07 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 11:34:38 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 11:44:15 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-28 11:44:19 -0800
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (16.7ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2014-11-28 11:44:24 -0800
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.3ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/welcome.css.scssc: can't dump anonymous class #<Class:0x000000054fb3e8>
+
+Completed 200 OK in 83ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome-cf7128f7700b612ab4675c5b632e6f9d.css?body=1" for 127.0.0.1 at 2014-11-28 11:44:24 -0800
+
+
+Started GET "/assets/application-e5b659ba110d977b20dead8146645793.css?body=1" for 127.0.0.1 at 2014-11-28 11:44:24 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-11-28 11:44:24 -0800
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-28 11:45:57 -0800
+Processing by Rails::InfoController#properties as */*
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/info/properties.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 10.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 11:49:55 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2014-11-28 11:49:58 -0800
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/application.css.scssc: can't dump anonymous class #<Class:0x000000054fb3e8>
+
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /home/nicholas/nickmarks/app/assets/images
+  /home/nicholas/nickmarks/app/assets/javascripts
+  /home/nicholas/nickmarks/app/assets/stylesheets
+  /home/nicholas/nickmarks/vendor/assets/javascripts
+  /home/nicholas/nickmarks/vendor/assets/stylesheets
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/turbolinks-2.5.2/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/jquery-rails-4.0.0/vendor/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /home/nicholas/nickmarks/app/assets/stylesheets/application.css.scss:1)):
+    2: <html>
+    3:   <head>
+    4:     <title>Nickmarks</title>
+    5:     <%= stylesheet_link_tag    "application", media: "all" %>
+    6:     <%= javascript_include_tag "application" %>
+    7:     <%= csrf_meta_tags %>
+    8:   </head>
+  app/assets/stylesheets/application.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2649269681987898850_52836860'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+
+
+Started GET "/welcome/" for 127.0.0.1 at 2014-11-28 11:50:01 -0800
+
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/welcome/inex" for 127.0.0.1 at 2014-11-28 11:50:24 -0800
+
+ActionController::RoutingError (No route matches [GET] "/welcome/inex"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (16.6ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-11-28 11:50:26 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/application.css.scssc: can't dump anonymous class #<Class:0x000000054fb3e8>
+
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /home/nicholas/nickmarks/app/assets/images
+  /home/nicholas/nickmarks/app/assets/javascripts
+  /home/nicholas/nickmarks/app/assets/stylesheets
+  /home/nicholas/nickmarks/vendor/assets/javascripts
+  /home/nicholas/nickmarks/vendor/assets/stylesheets
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/turbolinks-2.5.2/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/jquery-rails-4.0.0/vendor/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /home/nicholas/nickmarks/app/assets/stylesheets/application.css.scss:1)):
+    2: <html>
+    3:   <head>
+    4:     <title>Nickmarks</title>
+    5:     <%= stylesheet_link_tag    "application", media: "all" %>
+    6:     <%= javascript_include_tag "application" %>
+    7:     <%= csrf_meta_tags %>
+    8:   </head>
+  app/assets/stylesheets/application.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2649269681987898850_52836860'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-11-28 11:52:11 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/application.css.scssc: can't dump anonymous class #<Class:0x000000054fb3e8>
+
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /home/nicholas/nickmarks/app/assets/images
+  /home/nicholas/nickmarks/app/assets/javascripts
+  /home/nicholas/nickmarks/app/assets/stylesheets
+  /home/nicholas/nickmarks/vendor/assets/javascripts
+  /home/nicholas/nickmarks/vendor/assets/stylesheets
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/turbolinks-2.5.2/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/jquery-rails-4.0.0/vendor/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /home/nicholas/nickmarks/app/assets/stylesheets/application.css.scss:1)):
+    2: <html>
+    3: <head>
+    4:   <title>Nickmarks</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2649269681987898850_45259240'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 11:59:37 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2014-11-28 11:59:45 -0800
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/application.css.scssc: can't dump anonymous class #<Class:0x000000054fb3e8>
+
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /home/nicholas/nickmarks/app/assets/images
+  /home/nicholas/nickmarks/app/assets/javascripts
+  /home/nicholas/nickmarks/app/assets/stylesheets
+  /home/nicholas/nickmarks/vendor/assets/javascripts
+  /home/nicholas/nickmarks/vendor/assets/stylesheets
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/turbolinks-2.5.2/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/jquery-rails-4.0.0/vendor/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /home/nicholas/nickmarks/app/assets/stylesheets/application.css.scss:1)):
+    2: <html>
+    3:   <head>
+    4:     <title>Bloccit</title>
+    5:     <%= stylesheet_link_tag    "application", media: "all" %>
+    6:     <%= javascript_include_tag "application" %>
+    7:     <%= csrf_meta_tags %>
+    8:   </head>
+  app/assets/stylesheets/application.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2649269681987898850_70108902566800'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2014-11-28 12:21:53 -0800
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/application.css.scssc: can't dump anonymous class #<Class:0x000000054fb3e8>
+
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /home/nicholas/nickmarks/app/assets/images
+  /home/nicholas/nickmarks/app/assets/javascripts
+  /home/nicholas/nickmarks/app/assets/stylesheets
+  /home/nicholas/nickmarks/vendor/assets/javascripts
+  /home/nicholas/nickmarks/vendor/assets/stylesheets
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/turbolinks-2.5.2/lib/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/jquery-rails-4.0.0/vendor/assets/javascripts
+  /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /home/nicholas/nickmarks/app/assets/stylesheets/application.css.scss:1)):
+    2: <html>
+    3:   <head>
+    4:     <title>Nickmarks</title>
+    5:     <%= stylesheet_link_tag    "application", media: "all" %>
+    6:     <%= javascript_include_tag "application" %>
+    7:     <%= csrf_meta_tags %>
+    8:   </head>
+  app/assets/stylesheets/application.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2649269681987898850_54043540'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/welcome/about" for 127.0.0.1 at 2014-11-28 12:23:05 -0800
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.8ms)
+Warning. Error encountered while saving cache 3a148f7dde1646c830f0d6b064eaf374e44bfcdd/application.css.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 16593d9ceb7bef79dfa393208f13c626ef8e4d30/bootstrap.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_variables.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_mixins.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_hide-text.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_opacity.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_image.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_labels.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_reset-filter.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_resize.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_size.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_tab-focus.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_text-emphasis.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_text-overflow.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_alerts.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_buttons.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_panels.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_pagination.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_list-group.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_nav-divider.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_forms.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_progress-bar.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_table-row.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_background-variant.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_border-radius.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_gradients.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_clearfix.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_center-block.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_grid-framework.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 81682dd7994c91ba338867356c992c15b4e0c4a7/_grid.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_normalize.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_print.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_type.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_code.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_grid.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_tables.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_forms.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_buttons.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_component-animations.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_button-groups.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_input-groups.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_navs.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_navbar.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_pagination.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_pager.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_labels.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_badges.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_alerts.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_media.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_list-group.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_panels.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_responsive-embed.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_wells.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_close.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_modals.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_tooltip.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_popovers.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_carousel.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_utilities.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Warning. Error encountered while saving cache 3140b96d42b53ac91be356f7fec253772c7f1566/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000004534978>
+
+Completed 200 OK in 2457ms (Views: 2450.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-11-28 12:23:08 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-11-28 12:23:08 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-11-28 12:23:08 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-11-28 12:23:08 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-11-28 12:23:08 -0800
+
+
+Started GET "/assets/application-c93deb6ccc581da12913fb96a670a5bc.js?body=1" for 127.0.0.1 at 2014-11-28 12:23:08 -0800
