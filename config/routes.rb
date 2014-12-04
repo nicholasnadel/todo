@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-    root to: 'welcome#index', as: :user_root
-  
-
+  root to: 'welcome#index', as: :user_root
+  post :incoming, to: 'incoming#create'
   get 'users/new'
 
   # authenticated do
