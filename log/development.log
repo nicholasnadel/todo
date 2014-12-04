@@ -2049,3 +2049,3438 @@ Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.
 
 
 Started GET "/assets/application-810549ca197dca4835ff8cc625d9115f.js?body=1" for 127.0.0.1 at 2014-12-03 13:42:29 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnsToUsers (20141203223130)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "uid" varchar
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141203223130"]]
+  [1m[35m (11.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnsToUsers (20141203225024)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+SQLite3::SQLException: duplicate column name: provider: ALTER TABLE "users" ADD "provider" varchar
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnsToUsers (20141203225024)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+SQLite3::SQLException: duplicate column name: provider: ALTER TABLE "users" ADD "provider" varchar
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (12.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime, "provider" varchar, "uid" varchar) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (20.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (17.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (11.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (20.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141203223130')[0m
+  [1m[35m (11.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141203171509')
+  [1m[36m (11.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime, "provider" varchar, "uid" varchar) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (10.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (16.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (15.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (11.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141203223130')[0m
+  [1m[35m (11.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141203171509')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddColumnsToUsers (20141203225024)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+SQLite3::SQLException: duplicate column name: provider: ALTER TABLE "users" ADD "provider" varchar
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (16.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (11.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20141203171509)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `timestamp` was called without specifying an option for `null`. In Rails 5.0, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/nicholas/nickmarks/db/migrate/20141203171509_devise_create_users.rb:35)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141203171509"]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddColumnsToUsers (20141203225024)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "uid" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141203225024"]]
+  [1m[35m (16.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 296ms (Views: 295.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:05 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:01:09 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:01:10 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:01:38 -0800
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:01:39 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:01:42 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 120ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:02:19 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"568O5boYgi2GvtBhp9bujI+M2n/r/tGVwJBdn+H1eVAHfRQyx1OsPyM1TRirPn59l613dscPJsygjdUSbxbJ0Q==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "nicholasnadel@gmail.com"]]
+Completed 401 Unauthorized in 5ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"568O5boYgi2GvtBhp9bujI+M2n/r/tGVwJBdn+H1eVAHfRQyx1OsPyM1TRirPn59l613dscPJsygjdUSbxbJ0Q==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 167ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:20 -0800
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:02:22 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UOn0rXXXZE2W4yOjbUUIFBOJFGhev04BWjBsY6K3SBuwO+56CJxKXzNovtphrZjlC6i5YXJOuVg6LeTuLFT4mg==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "nicholasnadel@gmail.com"]]
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UOn0rXXXZE2W4yOjbUUIFBOJFGhev04BWjBsY6K3SBuwO+56CJxKXzNovtphrZjlC6i5YXJOuVg6LeTuLFT4mg==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 193ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:23 -0800
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhTaE53pTJvx9xa2wNdkyEQ7ud31Cu7c0/yh8scDOUuexsDE4KJiiVR8i8/MP/Q5XBoU1Nn7GYWz4Sl/SeCJyg==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "nicholasnadel@gmail.com"]]
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhTaE53pTJvx9xa2wNdkyEQ7ud31Cu7c0/yh8scDOUuexsDE4KJiiVR8i8/MP/Q5XBoU1Nn7GYWz4Sl/SeCJyg==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 154ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:26 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:31 -0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FceR/3iJgBHunca7AMt3OurZ15Xh/p9x1/jUZIRUfBj1FYsoBcKuA0sWW8IMI+fL8vh6nM0PaCi35VzpCrfMmQ==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'nicholasnadel@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-03 23:02:35.475528"], ["email", "nicholasnadel@gmail.com"], ["encrypted_password", "$2a$10$G69c9D1DRAanVhLQ2.raVOQHFhQ3pQ0Fu0wirhdpsMI85ccRjhQJS"], ["updated_at", "2014-12-03 23:02:35.475528"]]
+  [1m[36m (16.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-12-03 23:02:35.495588"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-12-03 23:02:35.495588"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-12-03 23:02:35.497732"]]
+  [1m[35m (10.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 178ms (ActiveRecord: 27.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:02:35 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:08:56 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  config/routes.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:09:04 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  config/routes.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:09:11 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.5ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:09:15 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:09:15 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fake" for 127.0.0.1 at 2014-12-03 15:09:25 -0800
+
+ActionController::RoutingError (No route matches [GET] "/fake"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (22.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:09:31 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:09:31 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-12-03 15:09:37 -0800
+Processing by Rails::InfoController#properties as */*
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/info/properties.html.erb (0.3ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:09:47 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:09:47 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:09:52 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:09:52 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:09:55 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:09:55 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 15:10:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 30ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:10:19 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:11:00 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/railties-4.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fake" for 127.0.0.1 at 2014-12-03 15:11:13 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:19: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:19: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.9ms)
+
+
+Started GET "/fake" for 127.0.0.1 at 2014-12-03 15:11:17 -0800
+
+ActionController::RoutingError (No route matches [GET] "/fake"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (5.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (28.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 15:11:22 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:11:22 -0800
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 136ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:11:23 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:02 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:04 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:18 -0800
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"W4PCD04YP4VRgKM9Yz7sfaGi170WGf/IyzFei1cYYX67UdjYM1MRl/QLPkRv1nyMuYN6tDroCJGrLNYG2fvR/w=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:13:20 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:24 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:15:26 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:15:27 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:15:52 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:15:52 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 117ms (Views: 116.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:15:55 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 15:20:03 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 123ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 15:20:04 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:20:05 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:20:06 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:30:17 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 15:30:17 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:36:25 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:36:35 -0800
+
+NoMethodError (undefined method `get' for main:Object):
+  config/routes.rb:6:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:36:45 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (49.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:36:53 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:36:57 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:37:09 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:37:16 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:16: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:16: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:37:20 -0800
+
+NoMethodError (undefined method `get' for main:Object):
+  config/routes.rb:6:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:37:29 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  config/routes.rb:17: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:37:35 -0800
+
+ArgumentError (Invalid route name, already in use: 'user_root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  config/routes.rb:10:in `block (2 levels) in <top (required)>'
+  config/routes.rb:9:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:37:59 -0800
+
+NoMethodError (undefined method `get' for main:Object):
+  config/routes.rb:6:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:38:05 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:38:09 -0800
+
+NoMethodError (undefined method `get' for main:Object):
+  config/routes.rb:6:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:38:14 -0800
+
+NoMethodError (undefined method `authenticated' for main:Object):
+  config/routes.rb:8:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (34.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (49.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:38:25 -0800
+
+NoMethodError (undefined method `get' for main:Object):
+  config/routes.rb:6:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:41:14 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (28.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (43.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:41:23 -0800
+
+NoMethodError (undefined method `get' for main:Object):
+  config/routes.rb:6:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:41:28 -0800
+
+NoMethodError (undefined method `authenticated' for main:Object):
+  config/routes.rb:8:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:42:41 -0800
+
+NoMethodError (undefined method `rememberable_options' for #<Class:0x00000006592170>):
+  activerecord (4.2.0.beta2) lib/active_record/dynamic_matchers.rb:26:in `method_missing'
+  devise (3.4.1) lib/devise/strategies/rememberable.rb:47:in `remember_key'
+  devise (3.4.1) lib/devise/strategies/rememberable.rb:51:in `remember_cookie'
+  devise (3.4.1) lib/devise/strategies/rememberable.rb:13:in `valid?'
+  warden (1.2.3) lib/warden/proxy.rb:351:in `block in _run_strategies_for'
+  warden (1.2.3) lib/warden/proxy.rb:349:in `each'
+  warden (1.2.3) lib/warden/proxy.rb:349:in `_run_strategies_for'
+  warden (1.2.3) lib/warden/proxy.rb:319:in `_perform_authentication'
+  warden (1.2.3) lib/warden/proxy.rb:104:in `authenticate'
+  warden (1.2.3) lib/warden/proxy.rb:114:in `authenticate?'
+  devise (3.4.1) lib/devise/rails/routes.rb:459:in `block in constraints_for'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:40:in `block in matches?'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:38:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:38:in `all?'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:38:in `matches?'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/mapper.rb:45:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0.beta2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0.beta2) lib/action_dispatch/routing/route_set.rb:750:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0.beta2) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0.beta2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0.beta2) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/flash.rb:257:in `call'
+  rack (1.6.0.beta2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0.beta2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/cookies.rb:558:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:645:in `call'
+  activerecord (4.2.0.beta2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/callbacks.rb:83:in `run_callbacks'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:42:55 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 140ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x00000005ca41f8>:0x000000029711c8>):
+    15: 
+    16:         <% else %>
+    17:           <li><%= link_to "Sign in", new_user_session_path %></li>
+    18:           <li><%= link_to "Sign Up", new_user_registration_path %><li>
+    19:           <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___2422802763541689026_41144220'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (19.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:43:25 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input):
+  config/routes.rb:15: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:43:30 -0800
+
+NoMethodError (undefined method `get' for main:Object):
+  config/routes.rb:6:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (33.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (48.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:44:02 -0800
+
+SyntaxError (/home/nicholas/nickmarks/config/routes.rb:15: syntax error, unexpected end-of-input, expecting keyword_end):
+  config/routes.rb:15: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:44:12 -0800
+
+ArgumentError (Invalid route name, already in use: 'user_root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  config/routes.rb:9:in `block (2 levels) in <top (required)>'
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:44:28 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 103ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x00000005ea6870>:0x00000005ea19b0>):
+    15: 
+    16:         <% else %>
+    17:           <li><%= link_to "Sign in", new_user_session_path %></li>
+    18:           <li><%= link_to "Sign Up", new_user_registration_path %><li>
+    19:           <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___2422802763541689026_41144220'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (22.1ms)
+
+
+Started GET "/fake" for 127.0.0.1 at 2014-12-03 16:44:40 -0800
+
+ActionController::RoutingError (No route matches [GET] "/fake"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (4.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:45:20 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 107ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x00000005ea6870>:0x007f282894d480>):
+    15: 
+    16:         <% else %>
+    17:           <li><%= link_to "Sign in", new_user_session_path %></li>
+    18:           <li><%= link_to "Sign Up", new_user_registration_path %><li>
+    19:           <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___2422802763541689026_41144220'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:45:21 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x00000005ea6870>:0x00000005f2fb98>):
+    15: 
+    16:         <% else %>
+    17:           <li><%= link_to "Sign in", new_user_session_path %></li>
+    18:           <li><%= link_to "Sign Up", new_user_registration_path %><li>
+    19:           <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___2422802763541689026_41144220'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:45:40 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x00000005ea6870>:0x00000005d39af0>):
+    15: 
+    16:         <% else %>
+    17:           <li><%= link_to "Sign in", new_user_session_path %></li>
+    18: <!--           <li><%= link_to "Sign Up", new_user_registration_path %><li>
+    19:  -->          <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___2422802763541689026_48928780'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (33.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (54.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:46 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 16:45:53 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 16:45:54 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 16:45:55 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 84ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:47:03 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 16:47:04 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 16:47:05 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 16:48:44 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 150ms (Views: 98.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l6jgA9QO4fs5AutA8eTVu/HpJ8INTcAD1e2TRkMfXZ3OLNMbHdlDtnVvbjReNHftaiM7MvWCPqq/kxfo4+wOoA==", "user"=>{"email"=>"nicholasnadel@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "nicholasnadel@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 75ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 16:48:45 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 88ms (Views: 87.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 16:49:10 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 17:00:57 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 118ms (Views: 117.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:58 -0800
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r/ODGWha/8OdPL5IKrJi7qUocXTilffHcFG/bLUsFj1UfFaoNh7Pys1d2OVKLkgNl4uoFJ3feKAx7Y2iyPVDPw=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:00:59 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:01:00 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:01:01 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 17:02:22 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:02:25 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:02:25 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 17:02:47 -0800
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:03:34 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 17:03:37 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:03:38 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:03:38 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 17:08:36 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 125ms (Views: 124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:08:36 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:36 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:36 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:37 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:37 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:37 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:37 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:37 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:08:37 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:08:38 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 17:08:43 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:08:46 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:08:46 -0800
+
+
+Started GET "/users/fake" for 127.0.0.1 at 2014-12-03 17:11:52 -0800
+
+ActionController::RoutingError (No route matches [GET] "/users/fake"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (41.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (58.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:12:08 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 17:13:02 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 184ms (Views: 163.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:13:06 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:13:07 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:14:51 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:15:14 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (71.3ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x000000044138c8>:0x007fca088eae70>):
+    1: <h2>Sign up</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    4:   <%= devise_error_messages! %>
+    5: 
+    6:   <div class="field">
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1088468114785778373_70252851841080'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 84ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:15:22 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 145ms (Views: 137.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:19 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:18:20 -0800
+
+
+Started GET "/fake" for 127.0.0.1 at 2014-12-03 17:18:24 -0800
+
+ActionController::RoutingError (No route matches [GET] "/fake"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (4.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (62.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20141204011941)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL[0m
+SQLite3::SQLException: duplicate column name: email: ALTER TABLE "users" ADD "email" varchar DEFAULT '' NOT NULL
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/fake" for 127.0.0.1 at 2014-12-03 17:23:43 -0800
+
+ActionController::RoutingError (No route matches [GET] "/fake"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (23.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 17:24:06 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `registration_path' for #<#<Class:0x00000005f39b70>:0x00000005f45830>):
+    1: <h2>Sign up</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    4:   <%= devise_error_messages! %>
+    5: 
+    6:   <div><%= f.label :email %><br />
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__426953142601279202_49955900'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 17:24:12 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:24:13 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 17:24:18 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `registration_path' for #<#<Class:0x00000005f39b70>:0x0000000620db08>):
+    1: <h2>Sign up</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    4:   <%= devise_error_messages! %>
+    5: 
+    6:   <div><%= f.label :email %><br />
+  app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__426953142601279202_49955900'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+
+
+Started GET "/fake" for 127.0.0.1 at 2014-12-03 17:25:47 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/fake"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (4.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (40.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (66.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 17:25:50 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 165ms (Views: 150.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 17:25:51 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:56:37 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:56:38 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:59:49 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 17:59:49 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 18:11:54 -0800
+
+ArgumentError (Mapping omniauth_callbacks on a resource that is not omniauthable
+Please add `devise :omniauthable` to the `User` model):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 18:13:18 -0800
+
+NameError (undefined local variable or method `omniauthable' for #<Class:0x007f340c5442e0>):
+  app/models/user.rb:5:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 99ms (Views: 88.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:13:43 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:13:45 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:13:46 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:13:59 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:13:59 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:15:11 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 185ms (Views: 163.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:15:28 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:15:29 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:15:29 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:17:17 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:17:17 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:19:42 -0800
+
+
+Started GET "/show" for 127.0.0.1 at 2014-12-03 18:19:48 -0800
+
+ActionController::RoutingError (No route matches [GET] "/show"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:31 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:53 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:54 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:20:58 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:21:14 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:15 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 114ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:21 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:22 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:21:45 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 80ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:21:46 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:21:47 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:11 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:22:49 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:22:50 -0800
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-12-03 18:22:54 -0800
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (39.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (61.6ms)
+
+
+Started GET "/unauthed_root_path" for 127.0.0.1 at 2014-12-03 18:23:14 -0800
+
+ActionController::RoutingError (No route matches [GET] "/unauthed_root_path"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/nicholas/.rvm/rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (20.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:42 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:45 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:23:47 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:01 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:24:02 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:03 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 74ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:24:04 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:24:32 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:24:32 -0800
+
+
+Started GET "/users/auth/facebook/callback?code=AQBx0AcQSF6-wmBj_rqAvIhwJV_DmP83L7pXj68shSopi9nLowIPMphlwm84rFikuODPqJv85xSs9p95xHxmNyihryxGa5L2SMIq-UYUG3sDzDGQISGvA5x6uaLbqFU0yLLDr_4LV_mEK300cEDhDcO0HK2eeHy7N1BM2vQpYDIrpwUhqfsWRiPcwqwnkJuvXdnVpdSNDJmK-tRk0KYJ5RjgAAGjWCWIGV8Dcn734H_FMCmZAKY89Q8RuNz3qbeqh9IefSFYpQkSFeooE7cFcX9pHmVQvQLy0cTmqqAIrW8IuODUKfZSo697ilmVKtLGyjCz7ODpPsRAQFAgg-9sgk2-0orKIBX0cWa-2iSaZAmKpg&state=e398597fe58991b8db1ea79a67d17f77b085d8d87c5d77ca" for 127.0.0.1 at 2014-12-03 18:24:38 -0800
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBx0AcQSF6-wmBj_rqAvIhwJV_DmP83L7pXj68shSopi9nLowIPMphlwm84rFikuODPqJv85xSs9p95xHxmNyihryxGa5L2SMIq-UYUG3sDzDGQISGvA5x6uaLbqFU0yLLDr_4LV_mEK300cEDhDcO0HK2eeHy7N1BM2vQpYDIrpwUhqfsWRiPcwqwnkJuvXdnVpdSNDJmK-tRk0KYJ5RjgAAGjWCWIGV8Dcn734H_FMCmZAKY89Q8RuNz3qbeqh9IefSFYpQkSFeooE7cFcX9pHmVQvQLy0cTmqqAIrW8IuODUKfZSo697ilmVKtLGyjCz7ODpPsRAQFAgg-9sgk2-0orKIBX0cWa-2iSaZAmKpg", "state"=>"e398597fe58991b8db1ea79a67d17f77b085d8d87c5d77ca"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10152600855038049"]]
+Completed 500 Internal Server Error in 80ms
+
+NoMethodError (undefined method `image=' for #<User:0x000000063be218>):
+  app/models/user.rb:12:in `block in from_omniauth'
+  app/models/user.rb:8:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/users/auth/facebook/callback?code=AQBx0AcQSF6-wmBj_rqAvIhwJV_DmP83L7pXj68shSopi9nLowIPMphlwm84rFikuODPqJv85xSs9p95xHxmNyihryxGa5L2SMIq-UYUG3sDzDGQISGvA5x6uaLbqFU0yLLDr_4LV_mEK300cEDhDcO0HK2eeHy7N1BM2vQpYDIrpwUhqfsWRiPcwqwnkJuvXdnVpdSNDJmK-tRk0KYJ5RjgAAGjWCWIGV8Dcn734H_FMCmZAKY89Q8RuNz3qbeqh9IefSFYpQkSFeooE7cFcX9pHmVQvQLy0cTmqqAIrW8IuODUKfZSo697ilmVKtLGyjCz7ODpPsRAQFAgg-9sgk2-0orKIBX0cWa-2iSaZAmKpg&state=e398597fe58991b8db1ea79a67d17f77b085d8d87c5d77ca" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"AQBx0AcQSF6-wmBj_rqAvIhwJV_DmP83L7pXj68shSopi9nLowIPMphlwm84rFikuODPqJv85xSs9p95xHxmNyihryxGa5L2SMIq-UYUG3sDzDGQISGvA5x6uaLbqFU0yLLDr_4LV_mEK300cEDhDcO0HK2eeHy7N1BM2vQpYDIrpwUhqfsWRiPcwqwnkJuvXdnVpdSNDJmK-tRk0KYJ5RjgAAGjWCWIGV8Dcn734H_FMCmZAKY89Q8RuNz3qbeqh9IefSFYpQkSFeooE7cFcX9pHmVQvQLy0cTmqqAIrW8IuODUKfZSo697ilmVKtLGyjCz7ODpPsRAQFAgg-9sgk2-0orKIBX0cWa-2iSaZAmKpg", "state"=>"e398597fe58991b8db1ea79a67d17f77b085d8d87c5d77ca"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 111ms (Views: 100.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:27:55 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:19 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:28:21 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:28:22 -0800
+
+
+Started GET "/users/auth/facebook/callback?code=AQDRwNCkA5YMlzjXRAOiIsq6HVVqZKxsBxMi4YFt125OyxhIqD7qzIK1Y0xGTZuHhV4RzJ4GkSzO9nw6F5GdUxNlCz6SGxvMRr9ro_T2kRhsGQIbmZbWwa5BMbmdkxUnsY0T-iAjztzClF7DtIyR_6NZf3_Z33Eip1VCxrzQsqA7zq8Upon7SNKtjGIWzRtJQN2SHOWFnrZAjdJYsRTiILnJEyesP-s7wk9d7I55K1xB4wimLGN5PKYOWZuMlmeXbVVcwHO8eaVQy9ZMvbUDsPzuB1gov1w_m3kSZPoVbjosRjdW04GyVYvXSHQfxGiXww6sLqOmSSLtw8_uxcsyFW104XEegKTu8elkcmWC16hBYA&state=a8e0c743647acf1f5aee2e1eb6398a664da65671e12060de" for 127.0.0.1 at 2014-12-03 18:28:22 -0800
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDRwNCkA5YMlzjXRAOiIsq6HVVqZKxsBxMi4YFt125OyxhIqD7qzIK1Y0xGTZuHhV4RzJ4GkSzO9nw6F5GdUxNlCz6SGxvMRr9ro_T2kRhsGQIbmZbWwa5BMbmdkxUnsY0T-iAjztzClF7DtIyR_6NZf3_Z33Eip1VCxrzQsqA7zq8Upon7SNKtjGIWzRtJQN2SHOWFnrZAjdJYsRTiILnJEyesP-s7wk9d7I55K1xB4wimLGN5PKYOWZuMlmeXbVVcwHO8eaVQy9ZMvbUDsPzuB1gov1w_m3kSZPoVbjosRjdW04GyVYvXSHQfxGiXww6sLqOmSSLtw8_uxcsyFW104XEegKTu8elkcmWC16hBYA", "state"=>"a8e0c743647acf1f5aee2e1eb6398a664da65671e12060de"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "facebook"], ["uid", "10152600855038049"]]
+Completed 500 Internal Server Error in 67ms
+
+NoMethodError (undefined method `image=' for #<User:0x00000006785d38>):
+  app/models/user.rb:12:in `block in from_omniauth'
+  app/models/user.rb:8:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/nicholas/.rvm/gems/ruby-2.0.0-p576/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (19.3ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:28:37 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-03 18:28:37 -0800
+
+
+Started GET "/users/auth/facebook/callback?code=AQBKhwPjMCtTDW1DLWIJeUIXLhO6FrJF-nMJIU95fQK7xFD5OZC80DvPPb9FbGohUCifXGHWEgeOAPiNO_ChLAxwP_wEUz4YPyUhwZ7anPktZ01Fya_0jT5S9AvpiTuh-CPDKIGqOgb-rbptBcooJvemTB-touJg5S0K_shrLDvhKpmNqve6lzqNp-t1NUbZndfL7fulZi7yc5LeOkIuIBSeuQL4euqLoxBM8cHZgG-_ZbD9uvTBk4yp3MbNLuGrcjTn0DxMwtNdqoaYMVnh1C3wkCxpxV-Vro_o5HVJhDRy8DQpIAhCc7n_KnwmTIl6Tz6t9tcR3dU0WcDhrKRVggZCIXKajIlWQF8v4MwS6c6fBQ&state=3c9405e029b7dfcb8c382a2e3fde5d413275993cb9b43e67" for 127.0.0.1 at 2014-12-03 18:28:37 -0800
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBKhwPjMCtTDW1DLWIJeUIXLhO6FrJF-nMJIU95fQK7xFD5OZC80DvPPb9FbGohUCifXGHWEgeOAPiNO_ChLAxwP_wEUz4YPyUhwZ7anPktZ01Fya_0jT5S9AvpiTuh-CPDKIGqOgb-rbptBcooJvemTB-touJg5S0K_shrLDvhKpmNqve6lzqNp-t1NUbZndfL7fulZi7yc5LeOkIuIBSeuQL4euqLoxBM8cHZgG-_ZbD9uvTBk4yp3MbNLuGrcjTn0DxMwtNdqoaYMVnh1C3wkCxpxV-Vro_o5HVJhDRy8DQpIAhCc7n_KnwmTIl6Tz6t9tcR3dU0WcDhrKRVggZCIXKajIlWQF8v4MwS6c6fBQ", "state"=>"3c9405e029b7dfcb8c382a2e3fde5d413275993cb9b43e67"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10152600855038049"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'nicholasnadelfacebook@gmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-04 02:28:38.444089"], ["email", "nicholasnadelfacebook@gmail.com"], ["encrypted_password", "$2a$10$yUeHhAroun3T7m1lw/F7FO1Wq3tU1fgJ/dPtidQJ2iJeYSoqqnGNC"], ["name", "Nicholas Shawn Nadel"], ["provider", "facebook"], ["uid", "10152600855038049"], ["updated_at", "2014-12-04 02:28:38.444089"]]
+  [1m[35m (13.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["current_sign_in_at", "2014-12-04 02:28:38.460084"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-12-04 02:28:38.460084"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-12-04 02:28:38.460796"]]
+  [1m[36m (20.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 123ms (ActiveRecord: 35.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-03 18:28:38 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 09:02:43 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 133ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd1854d139b891b410181e5e13ae6711.css?body=1" for 127.0.0.1 at 2014-12-04 09:02:43 -0800
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 127.0.0.1 at 2014-12-04 09:02:43 -0800
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 127.0.0.1 at 2014-12-04 09:02:43 -0800
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 127.0.0.1 at 2014-12-04 09:02:44 -0800
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-04 09:02:44 -0800
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-04 09:02:44 -0800
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127.0.0.1 at 2014-12-04 09:02:44 -0800
+
+
+Started GET "/assets/application-33a5c2b9a15c6de2c1b48184fabcd7d8.js?body=1" for 127.0.0.1 at 2014-12-04 09:02:44 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-04 09:02:47 -0800
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2014-12-04 09:02:47 -0800
+
+
+Started GET "/users/auth/facebook/callback?code=AQBJxGSXDXBs2mc86pTn3lExwL9weti7msEwVLOuVpLTMr_yT912bGcNVUetEkn1jRMZZSyGTC1IHOsTIlUad5w4_ocwG9CMrEm0ZqKHg5ethglwsHPQVbHGyje5LIppPQ-7gUvwWfJ95WiVI0FXGJHt6sGDAYvnylh2saMi9r3G8uOAJdpXuNuHbc_8IS_lSzquQApavaPpA8Cr4NBNZ5hfJO5q9NW2V7vWzOriAfmjeCAWL-lekUkmRMDW1_Sbe5KOEjsyYj_6_9ewchx0ocw_EsGwhp339_KUv0Bh7zhKNwVnm_hmcPiBWfxOod4-DqE&state=205f1a8f736c819e050afe8c4c9b089b64b4d41960213b78" for 127.0.0.1 at 2014-12-04 09:02:50 -0800
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBJxGSXDXBs2mc86pTn3lExwL9weti7msEwVLOuVpLTMr_yT912bGcNVUetEkn1jRMZZSyGTC1IHOsTIlUad5w4_ocwG9CMrEm0ZqKHg5ethglwsHPQVbHGyje5LIppPQ-7gUvwWfJ95WiVI0FXGJHt6sGDAYvnylh2saMi9r3G8uOAJdpXuNuHbc_8IS_lSzquQApavaPpA8Cr4NBNZ5hfJO5q9NW2V7vWzOriAfmjeCAWL-lekUkmRMDW1_Sbe5KOEjsyYj_6_9ewchx0ocw_EsGwhp339_KUv0Bh7zhKNwVnm_hmcPiBWfxOod4-DqE", "state"=>"205f1a8f736c819e050afe8c4c9b089b64b4d41960213b78"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10152600855038049"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["current_sign_in_at", "2014-12-04 17:02:51.781151"], ["sign_in_count", 2], ["updated_at", "2014-12-04 17:02:51.782461"]]
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 09:02:51 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.2ms)
