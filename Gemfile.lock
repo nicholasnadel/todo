@@ -200,6 +200,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   figaro
+  hashie
   jbuilder (~> 2.0)
   jquery-rails (~> 4.0.0.beta2)
   omniauth-facebook
