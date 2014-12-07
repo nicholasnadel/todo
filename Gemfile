@@ -25,6 +25,12 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'omniauth-facebook'
 gem 'figaro'
 gem 'hashie'
+gem 'html2haml'
+gem 'erubis'
+gem 'haml'
+gem 'hpricot'
+gem 'ruby_parser'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -40,7 +46,7 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0.0.beta4'
-
+  gem "erb2haml"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   # Use sqlite3 as the database for Active Record
