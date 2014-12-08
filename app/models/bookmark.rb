@@ -1,6 +1,6 @@
 class Bookmark < ActiveRecord::Base
   belongs_to :user
-  has_many :hashtags
+  has_and_belongs_to_many :hashtags
 
   validates :url, :format => URI::regexp(%w(http https)), presence: true
   
