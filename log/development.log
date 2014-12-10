@@ -30920,3 +30920,711 @@ Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 127
 
 
 Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 127.0.0.1 at 2014-12-09 22:38:45 -0800
+
+
+Started GET "/" for 108.185.99.13 at 2014-12-10 17:01:38 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.2ms)
+Warning. Error encountered while saving cache 40d523e05769fbbdadf671120b66e9637f754042/application.css.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache d9c8982a18dcf3f917d966cf0daae9123923cfb9/bootstrap.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_variables.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_mixins.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_hide-text.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_opacity.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_image.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_labels.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_reset-filter.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_resize.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_size.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_tab-focus.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_text-overflow.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_alerts.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_buttons.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_panels.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_pagination.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_list-group.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_nav-divider.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_forms.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_progress-bar.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_table-row.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_background-variant.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_border-radius.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_gradients.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_clearfix.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_center-block.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_grid-framework.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 49e2467e85869ae8e4d7544e8310c0235f254696/_grid.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_normalize.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_print.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_glyphicons.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_scaffolding.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_type.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_code.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_grid.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_tables.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_forms.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_buttons.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_component-animations.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_dropdowns.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_button-groups.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_input-groups.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_navs.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_navbar.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_pagination.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_pager.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_labels.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_badges.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_jumbotron.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_thumbnails.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_alerts.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_progress-bars.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_media.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_list-group.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_panels.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_wells.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_close.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_modals.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_tooltip.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_popovers.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_carousel.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_utilities.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Warning. Error encountered while saving cache 44ce673cdeff025cded4f5875ca904cc8ee2f1b8/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007f0d71f09eb8>
+
+Completed 200 OK in 8005ms (Views: 7980.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.185.99.13 at 2014-12-10 17:01:46 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 627ms (Views: 626.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/application-8a21befe0afd6c8f08813add1c95baa8.css?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/bookmarks-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/about-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/incoming-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 108.185.99.13 at 2014-12-10 17:01:47 +0000
+
+
+Started GET "/" for 108.185.99.13 at 2014-12-10 17:07:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 248ms (Views: 224.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.185.99.13 at 2014-12-10 17:15:46 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 160ms (Views: 159.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-8a21befe0afd6c8f08813add1c95baa8.css?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/about-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/bookmarks-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/incoming-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 108.185.99.13 at 2014-12-10 17:15:47 +0000
+
+
+Started GET "/" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-8a21befe0afd6c8f08813add1c95baa8.css?body=1" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+
+
+Started GET "/assets/about-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+
+
+Started GET "/assets/bookmarks-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:58 +0000
+
+
+Started GET "/assets/incoming-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:59 +0000
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:59 +0000
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:59 +0000
+
+
+Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 86.27.137.220 at 2014-12-10 17:16:59 +0000
+
+
+Started GET "/" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+
+
+Started GET "/assets/incoming-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+
+
+Started GET "/assets/bookmarks-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+
+
+Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 108.185.99.13 at 2014-12-10 17:19:15 +0000
+
+
+Started GET "/bookmarks" for 108.185.99.13 at 2014-12-10 17:19:17 +0000
+Processing by BookmarksController#index as HTML
+  [1m[35mBookmark Load (0.9ms)[0m  SELECT "bookmarks".* FROM "bookmarks"
+  Rendered bookmarks/index.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 162ms (Views: 132.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/" for 173.203.37.58 at 2014-12-10 17:19:51 +0000
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (7.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (107.1ms)
+
+
+Started GET "/" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 150ms (Views: 149.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bookmarks-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+
+
+Started GET "/assets/about-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+
+
+Started GET "/assets/incoming-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+
+
+Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:06 +0000
+
+
+Started GET "/bookmarks" for 108.185.99.13 at 2014-12-10 17:21:11 +0000
+Processing by BookmarksController#index as HTML
+  [1m[36mBookmark Load (0.3ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks"[0m
+  Rendered bookmarks/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 131ms (Views: 129.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/incoming" for 173.203.37.53 at 2014-12-10 17:21:36 +0000
+Processing by IncomingController#create as */*
+  Parameters: {"recipient"=>"nick@app32213585.mailgun.org", "sender"=>"nicholasnadel@gmail.com", "subject"=>"#ffffound", "from"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "X-Envelope-From"=>"<nicholasnadel@gmail.com>", "Received"=>"by mail-qc0-f180.google.com with SMTP id i8so2433648qcq.25 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:20:58 -0800 (PST)", "Dkim-Signature"=>"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=tc3GnTxHMMhdau2bqgZwb06G35LWtPECl4p9747+ktA=; b=YobLj63JFN6+u2IUSkyUEZHr32ldlvpK3bqgbQ314U6hGz9uJ3ZEZb8osURg32Q4g/ m28o/IW+FP1zSvUlOsl483XiEvpsQFjRnx3u7Z1gtMQHG45vVl2xt+Qd0JewqBmdEIlB TK1IVbXB3KsBbVtIOYkxLZ7lDqAq9Sxjlho1NlbQQJXIVg36723sIOyQRjtyPdsjuiRk 4IXhSp8+/IKzfThx4UH+/jEBJVhawbS7BzHxPdqxD2qPav0L7R+oF5fKD6SnUbHO48ul oXSzgB0Qqr+lTiVyUlBdqAy+MFUhbcRzsmA74lE9GMAW4gw1vfDSzvvAS6pYt78n9ZQK 3Ceg==", "X-Received"=>"by 10.140.86.99 with SMTP id o90mr9956393qgd.21.1418232057997; Wed, 10 Dec 2014 09:20:57 -0800 (PST)", "Mime-Version"=>"1.0", "From"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "Date"=>"Wed, 10 Dec 2014 17:20:57 +0000", "Message-Id"=>"<CA+HwR-nxE-Uu2kLXyrL1_Mrkpt=fDFsUMw=2TbbDnrKXSahUZg@mail.gmail.com>", "Subject"=>"#ffffound", "To"=>"\"nick@app32213585.mailgun.org\" <nick@app32213585.mailgun.org>", "Content-Type"=>"multipart/alternative; boundary=\"001a11c127ea06af2a0509dfe2cf\"", "X-Mailgun-Incoming"=>"Yes", "message-headers"=>"[[\"X-Envelope-From\", \"<nicholasnadel@gmail.com>\"], [\"Received\", \"from mail-qc0-f180.google.com (mail-qc0-f180.google.com [209.85.216.180]) by mxa.mailgun.org with ESMTP id 548880fa.5e649b0-in7; Wed, 10 Dec 2014 17:20:58 -0000 (UTC)\"], [\"Received\", \"by mail-qc0-f180.google.com with SMTP id i8so2433648qcq.25 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:20:58 -0800 (PST)\"], [\"Dkim-Signature\", \"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=tc3GnTxHMMhdau2bqgZwb06G35LWtPECl4p9747+ktA=; b=YobLj63JFN6+u2IUSkyUEZHr32ldlvpK3bqgbQ314U6hGz9uJ3ZEZb8osURg32Q4g/ m28o/IW+FP1zSvUlOsl483XiEvpsQFjRnx3u7Z1gtMQHG45vVl2xt+Qd0JewqBmdEIlB TK1IVbXB3KsBbVtIOYkxLZ7lDqAq9Sxjlho1NlbQQJXIVg36723sIOyQRjtyPdsjuiRk 4IXhSp8+/IKzfThx4UH+/jEBJVhawbS7BzHxPdqxD2qPav0L7R+oF5fKD6SnUbHO48ul oXSzgB0Qqr+lTiVyUlBdqAy+MFUhbcRzsmA74lE9GMAW4gw1vfDSzvvAS6pYt78n9ZQK 3Ceg==\"], [\"X-Received\", \"by 10.140.86.99 with SMTP id o90mr9956393qgd.21.1418232057997; Wed, 10 Dec 2014 09:20:57 -0800 (PST)\"], [\"Mime-Version\", \"1.0\"], [\"From\", \"Nicholas Nadel <nicholasnadel@gmail.com>\"], [\"Date\", \"Wed, 10 Dec 2014 17:20:57 +0000\"], [\"Message-Id\", \"<CA+HwR-nxE-Uu2kLXyrL1_Mrkpt=fDFsUMw=2TbbDnrKXSahUZg@mail.gmail.com>\"], [\"Subject\", \"#ffffound\"], [\"To\", \"\\\"nick@app32213585.mailgun.org\\\" <nick@app32213585.mailgun.org>\"], [\"Content-Type\", \"multipart/alternative; boundary=\\\"001a11c127ea06af2a0509dfe2cf\\\"\"], [\"X-Mailgun-Incoming\", \"Yes\"]]", "timestamp"=>"1418232096", "token"=>"0482effe86bd36b74687d280bfc6d14302a07c9a94f82c7f19", "signature"=>"69f028c66ff295d77a7acd0f2eb4488e65bf3eadd5bc2b6a55c48f6f37206106", "body-plain"=>"www.ffffound.com\r\n", "body-html"=>"<a href=\"http://www.ffffound.com\">www.ffffound.com</a>\r\n", "stripped-html"=>"<a href=\"http://www.ffffound.com\">www.ffffound.com</a>\r\n", "stripped-text"=>"www.ffffound.com", "stripped-signature"=>""}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "nicholasnadel@gmail.com"]]
+Completed 500 Internal Server Error in 100ms
+
+NoMethodError (undefined method `map' for #<MatchData "#ffffound">):
+  app/controllers/incoming_controller.rb:38:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (43.2ms)
+
+
+Started GET "/bookmarks" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+Processing by BookmarksController#index as HTML
+  [1m[36mBookmark Load (0.3ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks"[0m
+  Rendered bookmarks/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 113ms (Views: 112.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/about-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/bookmarks-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/application-8a21befe0afd6c8f08813add1c95baa8.css?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/incoming-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 108.185.99.13 at 2014-12-10 17:21:45 +0000
+
+
+Started POST "/incoming" for 173.203.37.49 at 2014-12-10 17:23:43 +0000
+Processing by IncomingController#create as */*
+  Parameters: {"recipient"=>"nick@app32213585.mailgun.org", "sender"=>"nicholasnadel@gmail.com", "subject"=>"#lifehacker", "from"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "X-Envelope-From"=>"<nicholasnadel@gmail.com>", "Received"=>"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:22:37 -0800 (PST)", "Dkim-Signature"=>"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=0rsIQEWKlEJix+8xk36myst+kU/Wp/NfQZDMuil1Byc=; b=JcgklxfbjhbgNxGYF9Hz8dk78EC+gNYoFMtzy3tu8DrnSY7JB9Uc0M4gbS9JkfJiDv FUhj4LsZEwoc3Sr8yqBY+aiTeZe8XlYVqCGuZxvO5Vk9XTV6YtlTq7F/qkR54glh11xB AVZ+cxgUg0jVqPLxq9rAquSNHnUk0P5epaSkibW4oLBXWJjf0mWLYmTKgm+06SnCo10h fGEb3KVi2EzR71A5luo0HGMRPzizyDgHA95HW1mt4k6+WiY0SEjAHdJ9EYpOHlMSI5T2 u4rH7j0dqOY5IoS5yg/NXDKLX6dYCOAWTn9KUlvr3rRgli6/Vw2v6fJ6GQtNlnhMAJER s6Qw==", "X-Received"=>"by 10.224.11.137 with SMTP id t9mr10975534qat.10.1418232197934; Wed, 10 Dec 2014 09:23:17 -0800 (PST)", "Mime-Version"=>"1.0", "From"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "Date"=>"Wed, 10 Dec 2014 09:22:37 -0800", "Message-Id"=>"<CA+HwR-kns52y=0RBtQc1GweDvYF=BbSfEoem8PoHUBFpjZ0WpA@mail.gmail.com>", "Subject"=>"#lifehacker", "To"=>"\"nick@app32213585.mailgun.org\" <nick@app32213585.mailgun.org>", "Content-Type"=>"multipart/alternative; boundary=\"001a11c2b3625e06400509dfeaec\"", "X-Mailgun-Incoming"=>"Yes", "message-headers"=>"[[\"X-Envelope-From\", \"<nicholasnadel@gmail.com>\"], [\"Received\", \"from mail-qg0-f44.google.com (mail-qg0-f44.google.com [209.85.192.44]) by mxa.mailgun.org with ESMTP id 54888186.7fc7b29f84f0-in2; Wed, 10 Dec 2014 17:23:18 -0000 (UTC)\"], [\"Received\", \"by mail-qg0-f44.google.com with SMTP id q107so377448qgd.31 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:23:18 -0800 (PST)\"], [\"Dkim-Signature\", \"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=0rsIQEWKlEJix+8xk36myst+kU/Wp/NfQZDMuil1Byc=; b=JcgklxfbjhbgNxGYF9Hz8dk78EC+gNYoFMtzy3tu8DrnSY7JB9Uc0M4gbS9JkfJiDv FUhj4LsZEwoc3Sr8yqBY+aiTeZe8XlYVqCGuZxvO5Vk9XTV6YtlTq7F/qkR54glh11xB AVZ+cxgUg0jVqPLxq9rAquSNHnUk0P5epaSkibW4oLBXWJjf0mWLYmTKgm+06SnCo10h fGEb3KVi2EzR71A5luo0HGMRPzizyDgHA95HW1mt4k6+WiY0SEjAHdJ9EYpOHlMSI5T2 u4rH7j0dqOY5IoS5yg/NXDKLX6dYCOAWTn9KUlvr3rRgli6/Vw2v6fJ6GQtNlnhMAJER s6Qw==\"], [\"X-Received\", \"by 10.224.11.137 with SMTP id t9mr10975534qat.10.1418232197934; Wed, 10 Dec 2014 09:23:17 -0800 (PST)\"], [\"Mime-Version\", \"1.0\"], [\"Received\", \"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:22:37 -0800 (PST)\"], [\"From\", \"Nicholas Nadel <nicholasnadel@gmail.com>\"], [\"Date\", \"Wed, 10 Dec 2014 09:22:37 -0800\"], [\"Message-Id\", \"<CA+HwR-kns52y=0RBtQc1GweDvYF=BbSfEoem8PoHUBFpjZ0WpA@mail.gmail.com>\"], [\"Subject\", \"#lifehacker\"], [\"To\", \"\\\"nick@app32213585.mailgun.org\\\" <nick@app32213585.mailgun.org>\"], [\"Content-Type\", \"multipart/alternative; boundary=\\\"001a11c2b3625e06400509dfeaec\\\"\"], [\"X-Mailgun-Incoming\", \"Yes\"]]", "timestamp"=>"1418232223", "token"=>"caf591e3d27010704271839facf0d222a74cca294cba69a8c7", "signature"=>"bdde99bf8cf28d1eb1addf9a825cda6a7ac047d0d8a7940bfebd097e67e9200b", "body-plain"=>"www.lifehacker.com\r\n", "body-html"=>"<div dir=\"ltr\"><a href=\"http://www.lifehacker.com\">www.lifehacker.com</a></div>\r\n", "stripped-html"=>"<div dir=\"ltr\"><a href=\"http://www.lifehacker.com\">www.lifehacker.com</a></div>\r\n", "stripped-text"=>"www.lifehacker.com", "stripped-signature"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "nicholasnadel@gmail.com"]]
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (undefined method `find_or_create' for #<Class:0x007f0b68608cc0>):
+  app/controllers/incoming_controller.rb:39:in `block in create'
+  app/controllers/incoming_controller.rb:38:in `map'
+  app/controllers/incoming_controller.rb:38:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (41.3ms)
+
+
+Started POST "/incoming" for 173.203.37.58 at 2014-12-10 17:24:44 +0000
+Processing by IncomingController#create as */*
+  Parameters: {"recipient"=>"nick@app32213585.mailgun.org", "sender"=>"nicholasnadel@gmail.com", "subject"=>"#testing", "from"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "X-Envelope-From"=>"<nicholasnadel@gmail.com>", "Received"=>"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:23:43 -0800 (PST)", "Dkim-Signature"=>"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=UEhQJTnTZ7zAeBNSGgRf0p/324A26wJgmY8MyQz1Ei8=; b=mdhUwI67yCO3+bi9EZFyzMsu9NUjo/Lc7227vWn4MJe7QUHaC44suRDHoQUmuNKsC4 cWysQRvsmh6Ji6TWazm/1yLEl9Mtw8B1C3GAAvLEEc7YOgS0W5mUZGtySytUlhNUZG+y 0SC4kMTMGXAdHjsEzE5pycr9Rw/GalxP88z1RVl04PFCbFsEm7YccTpphS+x6IPY2oM+ cudOabl5XcuTAh7aV/MsSmwugalFXcmof3ICCU65ekC/lXIwBHeC9dZ0QZNlR194MIpL q8+8YlonVeLYfhqXG3C/KZnlJtXRd4ckVufbeGX7yES4Lgvbq3QbfpbSOqa7DFkbtxlr qTVQ==", "X-Received"=>"by 10.140.84.111 with SMTP id k102mr10098599qgd.76.1418232263254; Wed, 10 Dec 2014 09:24:23 -0800 (PST)", "Mime-Version"=>"1.0", "From"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "Date"=>"Wed, 10 Dec 2014 09:23:43 -0800", "Message-Id"=>"<CA+HwR-nNYhdXLv+cqhDeM8CAcipM9yCbvBXHgJrfyC7OShMSbA@mail.gmail.com>", "Subject"=>"#testing", "To"=>"\"nick@app32213585.mailgun.org\" <nick@app32213585.mailgun.org>", "Content-Type"=>"multipart/alternative; boundary=\"001a11c1233e42a9bf0509dfee40\"", "X-Mailgun-Incoming"=>"Yes", "message-headers"=>"[[\"X-Envelope-From\", \"<nicholasnadel@gmail.com>\"], [\"Received\", \"from mail-qa0-f54.google.com (mail-qa0-f54.google.com [209.85.216.54]) by mxa.mailgun.org with ESMTP id 548881cc.7fa3cc3e3230-in1; Wed, 10 Dec 2014 17:24:28 -0000 (UTC)\"], [\"Received\", \"by mail-qa0-f54.google.com with SMTP id i13so2351113qae.27 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:24:28 -0800 (PST)\"], [\"Dkim-Signature\", \"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=UEhQJTnTZ7zAeBNSGgRf0p/324A26wJgmY8MyQz1Ei8=; b=mdhUwI67yCO3+bi9EZFyzMsu9NUjo/Lc7227vWn4MJe7QUHaC44suRDHoQUmuNKsC4 cWysQRvsmh6Ji6TWazm/1yLEl9Mtw8B1C3GAAvLEEc7YOgS0W5mUZGtySytUlhNUZG+y 0SC4kMTMGXAdHjsEzE5pycr9Rw/GalxP88z1RVl04PFCbFsEm7YccTpphS+x6IPY2oM+ cudOabl5XcuTAh7aV/MsSmwugalFXcmof3ICCU65ekC/lXIwBHeC9dZ0QZNlR194MIpL q8+8YlonVeLYfhqXG3C/KZnlJtXRd4ckVufbeGX7yES4Lgvbq3QbfpbSOqa7DFkbtxlr qTVQ==\"], [\"X-Received\", \"by 10.140.84.111 with SMTP id k102mr10098599qgd.76.1418232263254; Wed, 10 Dec 2014 09:24:23 -0800 (PST)\"], [\"Mime-Version\", \"1.0\"], [\"Received\", \"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:23:43 -0800 (PST)\"], [\"From\", \"Nicholas Nadel <nicholasnadel@gmail.com>\"], [\"Date\", \"Wed, 10 Dec 2014 09:23:43 -0800\"], [\"Message-Id\", \"<CA+HwR-nNYhdXLv+cqhDeM8CAcipM9yCbvBXHgJrfyC7OShMSbA@mail.gmail.com>\"], [\"Subject\", \"#testing\"], [\"To\", \"\\\"nick@app32213585.mailgun.org\\\" <nick@app32213585.mailgun.org>\"], [\"Content-Type\", \"multipart/alternative; boundary=\\\"001a11c1233e42a9bf0509dfee40\\\"\"], [\"X-Mailgun-Incoming\", \"Yes\"]]", "timestamp"=>"1418232284", "token"=>"924659dcebe5aa4629ceac7ceab31298145c2049cd2a23af95", "signature"=>"ea0a2e5a82990a964a7bb72c1cfbf64d0de12d694641c54d12835e44f9ad22df", "body-plain"=>"www.theverge.com\r\n", "body-html"=>"<div dir=\"ltr\"><a href=\"http://www.theverge.com\">www.theverge.com</a></div>\r\n", "stripped-html"=>"<div dir=\"ltr\"><a href=\"http://www.theverge.com\">www.theverge.com</a></div>\r\n", "stripped-text"=>"www.theverge.com", "stripped-signature"=>""}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "nicholasnadel@gmail.com"]]
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `find_or_create' for #<Class:0x007f0b68608cc0>):
+  app/controllers/incoming_controller.rb:39:in `block in create'
+  app/controllers/incoming_controller.rb:38:in `map'
+  app/controllers/incoming_controller.rb:38:in `create'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (40.7ms)
+
+
+Started POST "/incoming" for 173.203.37.58 at 2014-12-10 17:25:29 +0000
+Processing by IncomingController#create as */*
+  Parameters: {"recipient"=>"nick@app32213585.mailgun.org", "sender"=>"nicholasnadel@gmail.com", "subject"=>"#engadget", "from"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "X-Envelope-From"=>"<nicholasnadel@gmail.com>", "Received"=>"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:24:40 -0800 (PST)", "Dkim-Signature"=>"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=ZUgdZad8HFL/ItwsrjuiTFepCnOstaZ7CqpiKJhr6do=; b=r9yu8Zj3Eq1T3juzyiiCNH4DMJQak48kd9VBE3y1QWyWBL3v67h3D7RD5kdVARqf61 aDlOuDbXRaXyB/UQMcvchgRSpcGMWhi/PimE3KX0Horvra8tM07pG3igxBV/P7LHr8jW QP6MjRUc/+tPA4O8eQw/JC2SF9+IYDgQIEnkx+RZIewcP7DEuazMJCfOWz4zl34BnMF9 Oi7y6mMYtMO1q/eeNSm10v+8GeBCL+5qGeRx7CeMtltCuWsjklhnjQTIlVvNqud48lLo tgHAaPwKrh9Unh1MBj6eDdD20/FjkiIaIh3YVLAtaIGFZcXBvs2XSdlaZLY7mXSw1iiP B4YA==", "X-Received"=>"by 10.224.124.71 with SMTP id t7mr10772549qar.56.1418232320504; Wed, 10 Dec 2014 09:25:20 -0800 (PST)", "Mime-Version"=>"1.0", "From"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "Date"=>"Wed, 10 Dec 2014 09:24:40 -0800", "Message-Id"=>"<CA+HwR-m80jgOYHOR_HjaW_2WL6FakCS9OVwf571gVpkgJ=v3Og@mail.gmail.com>", "Subject"=>"#engadget", "To"=>"\"nick@app32213585.mailgun.org\" <nick@app32213585.mailgun.org>", "Content-Type"=>"multipart/alternative; boundary=\"001a11c2bc7eac3d6e0509dff101\"", "X-Mailgun-Incoming"=>"Yes", "message-headers"=>"[[\"X-Envelope-From\", \"<nicholasnadel@gmail.com>\"], [\"Received\", \"from mail-qc0-f179.google.com (mail-qc0-f179.google.com [209.85.216.179]) by mxa.mailgun.org with ESMTP id 54888201.6409530-in7; Wed, 10 Dec 2014 17:25:21 -0000 (UTC)\"], [\"Received\", \"by mail-qc0-f179.google.com with SMTP id c9so2547831qcz.10 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:25:20 -0800 (PST)\"], [\"Dkim-Signature\", \"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=ZUgdZad8HFL/ItwsrjuiTFepCnOstaZ7CqpiKJhr6do=; b=r9yu8Zj3Eq1T3juzyiiCNH4DMJQak48kd9VBE3y1QWyWBL3v67h3D7RD5kdVARqf61 aDlOuDbXRaXyB/UQMcvchgRSpcGMWhi/PimE3KX0Horvra8tM07pG3igxBV/P7LHr8jW QP6MjRUc/+tPA4O8eQw/JC2SF9+IYDgQIEnkx+RZIewcP7DEuazMJCfOWz4zl34BnMF9 Oi7y6mMYtMO1q/eeNSm10v+8GeBCL+5qGeRx7CeMtltCuWsjklhnjQTIlVvNqud48lLo tgHAaPwKrh9Unh1MBj6eDdD20/FjkiIaIh3YVLAtaIGFZcXBvs2XSdlaZLY7mXSw1iiP B4YA==\"], [\"X-Received\", \"by 10.224.124.71 with SMTP id t7mr10772549qar.56.1418232320504; Wed, 10 Dec 2014 09:25:20 -0800 (PST)\"], [\"Mime-Version\", \"1.0\"], [\"Received\", \"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:24:40 -0800 (PST)\"], [\"From\", \"Nicholas Nadel <nicholasnadel@gmail.com>\"], [\"Date\", \"Wed, 10 Dec 2014 09:24:40 -0800\"], [\"Message-Id\", \"<CA+HwR-m80jgOYHOR_HjaW_2WL6FakCS9OVwf571gVpkgJ=v3Og@mail.gmail.com>\"], [\"Subject\", \"#engadget\"], [\"To\", \"\\\"nick@app32213585.mailgun.org\\\" <nick@app32213585.mailgun.org>\"], [\"Content-Type\", \"multipart/alternative; boundary=\\\"001a11c2bc7eac3d6e0509dff101\\\"\"], [\"X-Mailgun-Incoming\", \"Yes\"]]", "timestamp"=>"1418232329", "token"=>"b9546e7b8997b857e937d0978f553ba65d5c42d6b9dd150317", "signature"=>"ae9e09beaaa1507d90faf726f8f044bf6cccb3a09c67ad7a8d368a723b6efc8f", "body-plain"=>"www.engadget.com\r\n", "body-html"=>"<div dir=\"ltr\"><a href=\"http://www.engadget.com\">www.engadget.com</a></div>\r\n", "stripped-html"=>"<div dir=\"ltr\"><a href=\"http://www.engadget.com\">www.engadget.com</a></div>\r\n", "stripped-text"=>"www.engadget.com", "stripped-signature"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "nicholasnadel@gmail.com"]]
+  [1m[36mHashtag Load (0.2ms)[0m  [1mSELECT  "hashtags".* FROM "hashtags"  ORDER BY "hashtags"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT  "hashtags".* FROM "hashtags" WHERE "hashtags"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "bookmarks" ("created_at", "updated_at", "url", "user_id") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-10 17:25:29.706871"], ["updated_at", "2014-12-10 17:25:29.706871"], ["url", "www.engadget.com\r\n"], ["user_id", 2]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "bookmarks_hashtags" ("bookmark_id", "hashtag_id") VALUES (?, ?)[0m  [["bookmark_id", 15], ["hashtag_id", 1]]
+  [1m[35m (18.2ms)[0m  commit transaction
+Completed 200 OK in 156ms (ActiveRecord: 21.6ms)
+
+
+Started GET "/bookmarks/1" for 108.185.99.13 at 2014-12-10 17:26:11 +0000
+Processing by BookmarksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT  "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bookmarks/show.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 124ms (Views: 109.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/bookmarks/7" for 108.185.99.13 at 2014-12-10 17:26:13 +0000
+Processing by BookmarksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT  "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered bookmarks/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookmarks/14" for 108.185.99.13 at 2014-12-10 17:26:14 +0000
+Processing by BookmarksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT  "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered bookmarks/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 114ms (Views: 112.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookmarks/7" for 108.185.99.13 at 2014-12-10 17:26:37 +0000
+Processing by BookmarksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT  "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered bookmarks/show.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 120ms (Views: 118.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bookmarks" for 108.185.99.13 at 2014-12-10 17:28:03 +0000
+Processing by BookmarksController#index as HTML
+  [1m[36mBookmark Load (0.4ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks"[0m
+  Rendered bookmarks/index.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: %h1 My Bookmarks
+    2: - @bookmarks.each do |bookmark|
+    3: - @hashtag.title
+    4:   .mycss
+    5:     = link_to bookmark.url, bookmark
+    6:   
+  app/views/bookmarks/index.html.haml:3:in `block in _app_views_bookmarks_index_html_haml___241181632877068296_69843637910060'
+  app/views/bookmarks/index.html.haml:2:in `_app_views_bookmarks_index_html_haml___241181632877068296_69843637910060'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (43.5ms)
+
+
+Started GET "/bookmarks" for 108.185.99.13 at 2014-12-10 17:28:59 +0000
+Processing by BookmarksController#index as HTML
+  [1m[35mBookmark Load (0.4ms)[0m  SELECT "bookmarks".* FROM "bookmarks"
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 1]]
+  [1m[35mHashtag Load (0.2ms)[0m  SELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?  [["bookmark_id", 2]]
+  [1m[36mHashtag Load (0.1ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 3]]
+  [1m[35mHashtag Load (0.1ms)[0m  SELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?  [["bookmark_id", 4]]
+  [1m[36mHashtag Load (0.1ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 5]]
+  [1m[35mHashtag Load (0.1ms)[0m  SELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?  [["bookmark_id", 6]]
+  [1m[36mHashtag Load (0.1ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 7]]
+  [1m[35mHashtag Load (0.1ms)[0m  SELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?  [["bookmark_id", 8]]
+  [1m[36mHashtag Load (0.1ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 9]]
+  [1m[35mHashtag Load (0.1ms)[0m  SELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?  [["bookmark_id", 10]]
+  [1m[36mHashtag Load (0.1ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 11]]
+  [1m[35mHashtag Load (0.1ms)[0m  SELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?  [["bookmark_id", 12]]
+  [1m[36mHashtag Load (0.1ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 13]]
+  [1m[35mHashtag Load (0.1ms)[0m  SELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?  [["bookmark_id", 14]]
+  [1m[36mHashtag Load (0.2ms)[0m  [1mSELECT "hashtags".* FROM "hashtags" INNER JOIN "bookmarks_hashtags" ON "hashtags"."id" = "bookmarks_hashtags"."hashtag_id" WHERE "bookmarks_hashtags"."bookmark_id" = ?[0m  [["bookmark_id", 15]]
+  Rendered bookmarks/index.html.haml within layouts/application (79.8ms)
+Completed 200 OK in 187ms (Views: 183.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery-dfb1e594c3e61a04cc388702c3feec1f.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/application-8a21befe0afd6c8f08813add1c95baa8.css?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/jquery_ujs-d68671a1cc3ff7bd3f96ef9686111a5d.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/turbolinks-60c7d150bd7b7a75d67e6d1f0d4129a6.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/about-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/bookmarks-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/home-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/incoming-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/users-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/welcome-5cf9e471f6dbffd4600ae141132a5888.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started GET "/assets/application-bbe1185ab3aebf638b13c1d332400a47.js?body=1" for 108.185.99.13 at 2014-12-10 17:29:00 +0000
+
+
+Started POST "/incoming" for 173.203.37.55 at 2014-12-10 17:39:50 +0000
+Processing by IncomingController#create as */*
+  Parameters: {"recipient"=>"nick@app32213585.mailgun.org", "sender"=>"nicholasnadel@gmail.com", "subject"=>"#testing", "from"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "X-Envelope-From"=>"<nicholasnadel@gmail.com>", "Received"=>"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:23:43 -0800 (PST)", "Dkim-Signature"=>"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=UEhQJTnTZ7zAeBNSGgRf0p/324A26wJgmY8MyQz1Ei8=; b=mdhUwI67yCO3+bi9EZFyzMsu9NUjo/Lc7227vWn4MJe7QUHaC44suRDHoQUmuNKsC4 cWysQRvsmh6Ji6TWazm/1yLEl9Mtw8B1C3GAAvLEEc7YOgS0W5mUZGtySytUlhNUZG+y 0SC4kMTMGXAdHjsEzE5pycr9Rw/GalxP88z1RVl04PFCbFsEm7YccTpphS+x6IPY2oM+ cudOabl5XcuTAh7aV/MsSmwugalFXcmof3ICCU65ekC/lXIwBHeC9dZ0QZNlR194MIpL q8+8YlonVeLYfhqXG3C/KZnlJtXRd4ckVufbeGX7yES4Lgvbq3QbfpbSOqa7DFkbtxlr qTVQ==", "X-Received"=>"by 10.140.84.111 with SMTP id k102mr10098599qgd.76.1418232263254; Wed, 10 Dec 2014 09:24:23 -0800 (PST)", "Mime-Version"=>"1.0", "From"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "Date"=>"Wed, 10 Dec 2014 09:23:43 -0800", "Message-Id"=>"<CA+HwR-nNYhdXLv+cqhDeM8CAcipM9yCbvBXHgJrfyC7OShMSbA@mail.gmail.com>", "Subject"=>"#testing", "To"=>"\"nick@app32213585.mailgun.org\" <nick@app32213585.mailgun.org>", "Content-Type"=>"multipart/alternative; boundary=\"001a11c1233e42a9bf0509dfee40\"", "X-Mailgun-Incoming"=>"Yes", "message-headers"=>"[[\"X-Envelope-From\", \"<nicholasnadel@gmail.com>\"], [\"Received\", \"from mail-qa0-f54.google.com (mail-qa0-f54.google.com [209.85.216.54]) by mxa.mailgun.org with ESMTP id 548881cc.7fa3cc3e3230-in1; Wed, 10 Dec 2014 17:24:28 -0000 (UTC)\"], [\"Received\", \"by mail-qa0-f54.google.com with SMTP id i13so2351113qae.27 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:24:28 -0800 (PST)\"], [\"Dkim-Signature\", \"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=UEhQJTnTZ7zAeBNSGgRf0p/324A26wJgmY8MyQz1Ei8=; b=mdhUwI67yCO3+bi9EZFyzMsu9NUjo/Lc7227vWn4MJe7QUHaC44suRDHoQUmuNKsC4 cWysQRvsmh6Ji6TWazm/1yLEl9Mtw8B1C3GAAvLEEc7YOgS0W5mUZGtySytUlhNUZG+y 0SC4kMTMGXAdHjsEzE5pycr9Rw/GalxP88z1RVl04PFCbFsEm7YccTpphS+x6IPY2oM+ cudOabl5XcuTAh7aV/MsSmwugalFXcmof3ICCU65ekC/lXIwBHeC9dZ0QZNlR194MIpL q8+8YlonVeLYfhqXG3C/KZnlJtXRd4ckVufbeGX7yES4Lgvbq3QbfpbSOqa7DFkbtxlr qTVQ==\"], [\"X-Received\", \"by 10.140.84.111 with SMTP id k102mr10098599qgd.76.1418232263254; Wed, 10 Dec 2014 09:24:23 -0800 (PST)\"], [\"Mime-Version\", \"1.0\"], [\"Received\", \"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:23:43 -0800 (PST)\"], [\"From\", \"Nicholas Nadel <nicholasnadel@gmail.com>\"], [\"Date\", \"Wed, 10 Dec 2014 09:23:43 -0800\"], [\"Message-Id\", \"<CA+HwR-nNYhdXLv+cqhDeM8CAcipM9yCbvBXHgJrfyC7OShMSbA@mail.gmail.com>\"], [\"Subject\", \"#testing\"], [\"To\", \"\\\"nick@app32213585.mailgun.org\\\" <nick@app32213585.mailgun.org>\"], [\"Content-Type\", \"multipart/alternative; boundary=\\\"001a11c1233e42a9bf0509dfee40\\\"\"], [\"X-Mailgun-Incoming\", \"Yes\"]]", "timestamp"=>"1418233190", "token"=>"ecf8fb2e8696f2fe2ea3cb0fccdabbc1354a5b6b7b8b0e9515", "signature"=>"deac090f400430dd163fdd6166346d82a3e242e3922978b0a6f65da7f18a3b43", "body-plain"=>"www.theverge.com\r\n", "body-html"=>"<div dir=\"ltr\"><a href=\"http://www.theverge.com\">www.theverge.com</a></div>\r\n", "stripped-html"=>"<div dir=\"ltr\"><a href=\"http://www.theverge.com\">www.theverge.com</a></div>\r\n", "stripped-text"=>"www.theverge.com", "stripped-signature"=>""}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "nicholasnadel@gmail.com"]]
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT  "hashtags".* FROM "hashtags"  ORDER BY "hashtags"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mHashtag Load (0.2ms)[0m  [1mSELECT  "hashtags".* FROM "hashtags" WHERE "hashtags"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "bookmarks" ("created_at", "updated_at", "url", "user_id") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-10 17:39:50.654595"], ["updated_at", "2014-12-10 17:39:50.654595"], ["url", "www.theverge.com\r\n"], ["user_id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "bookmarks_hashtags" ("bookmark_id", "hashtag_id") VALUES (?, ?)[0m  [["bookmark_id", 16], ["hashtag_id", 1]]
+  [1m[35m (222.0ms)[0m  commit transaction
+Completed 200 OK in 259ms (ActiveRecord: 223.9ms)
+
+
+Started POST "/incoming" for 173.203.37.55 at 2014-12-10 17:39:50 +0000
+Processing by IncomingController#create as */*
+  Parameters: {"recipient"=>"nick@app32213585.mailgun.org", "sender"=>"nicholasnadel@gmail.com", "subject"=>"#lifehacker", "from"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "X-Envelope-From"=>"<nicholasnadel@gmail.com>", "Received"=>"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:22:37 -0800 (PST)", "Dkim-Signature"=>"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=0rsIQEWKlEJix+8xk36myst+kU/Wp/NfQZDMuil1Byc=; b=JcgklxfbjhbgNxGYF9Hz8dk78EC+gNYoFMtzy3tu8DrnSY7JB9Uc0M4gbS9JkfJiDv FUhj4LsZEwoc3Sr8yqBY+aiTeZe8XlYVqCGuZxvO5Vk9XTV6YtlTq7F/qkR54glh11xB AVZ+cxgUg0jVqPLxq9rAquSNHnUk0P5epaSkibW4oLBXWJjf0mWLYmTKgm+06SnCo10h fGEb3KVi2EzR71A5luo0HGMRPzizyDgHA95HW1mt4k6+WiY0SEjAHdJ9EYpOHlMSI5T2 u4rH7j0dqOY5IoS5yg/NXDKLX6dYCOAWTn9KUlvr3rRgli6/Vw2v6fJ6GQtNlnhMAJER s6Qw==", "X-Received"=>"by 10.224.11.137 with SMTP id t9mr10975534qat.10.1418232197934; Wed, 10 Dec 2014 09:23:17 -0800 (PST)", "Mime-Version"=>"1.0", "From"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "Date"=>"Wed, 10 Dec 2014 09:22:37 -0800", "Message-Id"=>"<CA+HwR-kns52y=0RBtQc1GweDvYF=BbSfEoem8PoHUBFpjZ0WpA@mail.gmail.com>", "Subject"=>"#lifehacker", "To"=>"\"nick@app32213585.mailgun.org\" <nick@app32213585.mailgun.org>", "Content-Type"=>"multipart/alternative; boundary=\"001a11c2b3625e06400509dfeaec\"", "X-Mailgun-Incoming"=>"Yes", "message-headers"=>"[[\"X-Envelope-From\", \"<nicholasnadel@gmail.com>\"], [\"Received\", \"from mail-qg0-f44.google.com (mail-qg0-f44.google.com [209.85.192.44]) by mxa.mailgun.org with ESMTP id 54888186.7fc7b29f84f0-in2; Wed, 10 Dec 2014 17:23:18 -0000 (UTC)\"], [\"Received\", \"by mail-qg0-f44.google.com with SMTP id q107so377448qgd.31 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:23:18 -0800 (PST)\"], [\"Dkim-Signature\", \"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=0rsIQEWKlEJix+8xk36myst+kU/Wp/NfQZDMuil1Byc=; b=JcgklxfbjhbgNxGYF9Hz8dk78EC+gNYoFMtzy3tu8DrnSY7JB9Uc0M4gbS9JkfJiDv FUhj4LsZEwoc3Sr8yqBY+aiTeZe8XlYVqCGuZxvO5Vk9XTV6YtlTq7F/qkR54glh11xB AVZ+cxgUg0jVqPLxq9rAquSNHnUk0P5epaSkibW4oLBXWJjf0mWLYmTKgm+06SnCo10h fGEb3KVi2EzR71A5luo0HGMRPzizyDgHA95HW1mt4k6+WiY0SEjAHdJ9EYpOHlMSI5T2 u4rH7j0dqOY5IoS5yg/NXDKLX6dYCOAWTn9KUlvr3rRgli6/Vw2v6fJ6GQtNlnhMAJER s6Qw==\"], [\"X-Received\", \"by 10.224.11.137 with SMTP id t9mr10975534qat.10.1418232197934; Wed, 10 Dec 2014 09:23:17 -0800 (PST)\"], [\"Mime-Version\", \"1.0\"], [\"Received\", \"by 10.140.93.164 with HTTP; Wed, 10 Dec 2014 09:22:37 -0800 (PST)\"], [\"From\", \"Nicholas Nadel <nicholasnadel@gmail.com>\"], [\"Date\", \"Wed, 10 Dec 2014 09:22:37 -0800\"], [\"Message-Id\", \"<CA+HwR-kns52y=0RBtQc1GweDvYF=BbSfEoem8PoHUBFpjZ0WpA@mail.gmail.com>\"], [\"Subject\", \"#lifehacker\"], [\"To\", \"\\\"nick@app32213585.mailgun.org\\\" <nick@app32213585.mailgun.org>\"], [\"Content-Type\", \"multipart/alternative; boundary=\\\"001a11c2b3625e06400509dfeaec\\\"\"], [\"X-Mailgun-Incoming\", \"Yes\"]]", "timestamp"=>"1418233190", "token"=>"835318facfb971958f2bd55a8587612c16cf07d65c169def79", "signature"=>"98af3eca9e52df0536a98d6eaec1344056e577597e6d0bfb2700d789e720d9ef", "body-plain"=>"www.lifehacker.com\r\n", "body-html"=>"<div dir=\"ltr\"><a href=\"http://www.lifehacker.com\">www.lifehacker.com</a></div>\r\n", "stripped-html"=>"<div dir=\"ltr\"><a href=\"http://www.lifehacker.com\">www.lifehacker.com</a></div>\r\n", "stripped-text"=>"www.lifehacker.com", "stripped-signature"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "nicholasnadel@gmail.com"]]
+  [1m[35mHashtag Load (0.2ms)[0m  SELECT  "hashtags".* FROM "hashtags"  ORDER BY "hashtags"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mHashtag Load (0.1ms)[0m  SELECT  "hashtags".* FROM "hashtags" WHERE "hashtags"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bookmarks" ("created_at", "updated_at", "url", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-10 17:39:50.906539"], ["updated_at", "2014-12-10 17:39:50.906539"], ["url", "www.lifehacker.com\r\n"], ["user_id", 2]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "bookmarks_hashtags" ("bookmark_id", "hashtag_id") VALUES (?, ?)  [["bookmark_id", 17], ["hashtag_id", 1]]
+  [1m[36m (63.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 95ms (ActiveRecord: 64.4ms)
+
+
+Started POST "/incoming" for 173.203.37.55 at 2014-12-10 17:39:50 +0000
+Processing by IncomingController#create as */*
+  Parameters: {"recipient"=>"nick@app32213585.mailgun.org", "sender"=>"nicholasnadel@gmail.com", "subject"=>"#ffffound", "from"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "X-Envelope-From"=>"<nicholasnadel@gmail.com>", "Received"=>"by mail-qc0-f180.google.com with SMTP id i8so2433648qcq.25 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:20:58 -0800 (PST)", "Dkim-Signature"=>"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=tc3GnTxHMMhdau2bqgZwb06G35LWtPECl4p9747+ktA=; b=YobLj63JFN6+u2IUSkyUEZHr32ldlvpK3bqgbQ314U6hGz9uJ3ZEZb8osURg32Q4g/ m28o/IW+FP1zSvUlOsl483XiEvpsQFjRnx3u7Z1gtMQHG45vVl2xt+Qd0JewqBmdEIlB TK1IVbXB3KsBbVtIOYkxLZ7lDqAq9Sxjlho1NlbQQJXIVg36723sIOyQRjtyPdsjuiRk 4IXhSp8+/IKzfThx4UH+/jEBJVhawbS7BzHxPdqxD2qPav0L7R+oF5fKD6SnUbHO48ul oXSzgB0Qqr+lTiVyUlBdqAy+MFUhbcRzsmA74lE9GMAW4gw1vfDSzvvAS6pYt78n9ZQK 3Ceg==", "X-Received"=>"by 10.140.86.99 with SMTP id o90mr9956393qgd.21.1418232057997; Wed, 10 Dec 2014 09:20:57 -0800 (PST)", "Mime-Version"=>"1.0", "From"=>"Nicholas Nadel <nicholasnadel@gmail.com>", "Date"=>"Wed, 10 Dec 2014 17:20:57 +0000", "Message-Id"=>"<CA+HwR-nxE-Uu2kLXyrL1_Mrkpt=fDFsUMw=2TbbDnrKXSahUZg@mail.gmail.com>", "Subject"=>"#ffffound", "To"=>"\"nick@app32213585.mailgun.org\" <nick@app32213585.mailgun.org>", "Content-Type"=>"multipart/alternative; boundary=\"001a11c127ea06af2a0509dfe2cf\"", "X-Mailgun-Incoming"=>"Yes", "message-headers"=>"[[\"X-Envelope-From\", \"<nicholasnadel@gmail.com>\"], [\"Received\", \"from mail-qc0-f180.google.com (mail-qc0-f180.google.com [209.85.216.180]) by mxa.mailgun.org with ESMTP id 548880fa.5e649b0-in7; Wed, 10 Dec 2014 17:20:58 -0000 (UTC)\"], [\"Received\", \"by mail-qc0-f180.google.com with SMTP id i8so2433648qcq.25 for <nick@app32213585.mailgun.org>; Wed, 10 Dec 2014 09:20:58 -0800 (PST)\"], [\"Dkim-Signature\", \"v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to:content-type; bh=tc3GnTxHMMhdau2bqgZwb06G35LWtPECl4p9747+ktA=; b=YobLj63JFN6+u2IUSkyUEZHr32ldlvpK3bqgbQ314U6hGz9uJ3ZEZb8osURg32Q4g/ m28o/IW+FP1zSvUlOsl483XiEvpsQFjRnx3u7Z1gtMQHG45vVl2xt+Qd0JewqBmdEIlB TK1IVbXB3KsBbVtIOYkxLZ7lDqAq9Sxjlho1NlbQQJXIVg36723sIOyQRjtyPdsjuiRk 4IXhSp8+/IKzfThx4UH+/jEBJVhawbS7BzHxPdqxD2qPav0L7R+oF5fKD6SnUbHO48ul oXSzgB0Qqr+lTiVyUlBdqAy+MFUhbcRzsmA74lE9GMAW4gw1vfDSzvvAS6pYt78n9ZQK 3Ceg==\"], [\"X-Received\", \"by 10.140.86.99 with SMTP id o90mr9956393qgd.21.1418232057997; Wed, 10 Dec 2014 09:20:57 -0800 (PST)\"], [\"Mime-Version\", \"1.0\"], [\"From\", \"Nicholas Nadel <nicholasnadel@gmail.com>\"], [\"Date\", \"Wed, 10 Dec 2014 17:20:57 +0000\"], [\"Message-Id\", \"<CA+HwR-nxE-Uu2kLXyrL1_Mrkpt=fDFsUMw=2TbbDnrKXSahUZg@mail.gmail.com>\"], [\"Subject\", \"#ffffound\"], [\"To\", \"\\\"nick@app32213585.mailgun.org\\\" <nick@app32213585.mailgun.org>\"], [\"Content-Type\", \"multipart/alternative; boundary=\\\"001a11c127ea06af2a0509dfe2cf\\\"\"], [\"X-Mailgun-Incoming\", \"Yes\"]]", "timestamp"=>"1418233190", "token"=>"bbd708437a18836ce61b61ef195a111e70ba326af454e165ba", "signature"=>"ba1e8e2f1bf107183337a14e8eafd99d1109cc00641c8745d9896e744f381a40", "body-plain"=>"www.ffffound.com\r\n", "body-html"=>"<a href=\"http://www.ffffound.com\">www.ffffound.com</a>\r\n", "stripped-html"=>"<a href=\"http://www.ffffound.com\">www.ffffound.com</a>\r\n", "stripped-text"=>"www.ffffound.com", "stripped-signature"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "nicholasnadel@gmail.com"]]
+  [1m[36mHashtag Load (0.3ms)[0m  [1mSELECT  "hashtags".* FROM "hashtags"  ORDER BY "hashtags"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mHashtag Load (0.1ms)[0m  [1mSELECT  "hashtags".* FROM "hashtags" WHERE "hashtags"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "bookmarks" ("created_at", "updated_at", "url", "user_id") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-10 17:39:51.009814"], ["updated_at", "2014-12-10 17:39:51.009814"], ["url", "www.ffffound.com\r\n"], ["user_id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "bookmarks_hashtags" ("bookmark_id", "hashtag_id") VALUES (?, ?)[0m  [["bookmark_id", 18], ["hashtag_id", 1]]
+  [1m[35m (45.0ms)[0m  commit transaction
+Completed 200 OK in 63ms (ActiveRecord: 46.2ms)
+
+
+Started POST "/" for 173.203.37.55 at 2014-12-10 17:39:51 +0000
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (55.0ms)
+
+
+Started POST "/" for 173.203.37.57 at 2014-12-10 17:58:25 +0000
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0.beta2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0.beta2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0.beta2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0.beta2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0.beta2) lib/action_dispatch/middleware/static.rb:103:in `call'
+  rack (1.6.0.beta2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0.beta2) lib/rails/engine.rb:514:in `call'
+  railties (4.2.0.beta2) lib/rails/application.rb:161:in `call'
+  rack (1.6.0.beta2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0.beta2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0.beta2) lib/rack/handler/webrick.rb:89:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (57.2ms)

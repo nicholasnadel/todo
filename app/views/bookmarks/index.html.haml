@@ -1,5 +1,6 @@
 %h1 My Bookmarks
 - @bookmarks.each do |bookmark|
-  .mycss
+  .bookmark
     = link_to bookmark.url, bookmark
+    = bookmark.hashtags.map(&:title).join(', ')
   

@@ -24,24 +24,28 @@ class IncomingController < ApplicationController
   end
 
   def create
-      #decoded_body = nil
-      sender = params['sender']
-      subject = params['subject']
-      body_plain = params["body-plain"]
-      user = User.find_by_email  params["sender"]
-          if !user  
-            head 200 && return
-          end
-          url = /\b(([\w-]+:\/\/?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:<>"]\s]|\/)))/.match(params["body-plain"])
-          @bookmark = user.bookmarks.build(url: params[:"body-plain"])
-          @bookmark.save!
-          @hashtags = /#\w+/.match(params["Subject"])
-          puts "Hashtag value: #{@hashtag}"
-          @hashtag = Hashtag.new(title: @hashtags)
-          @hashtag.save!
-                  head 200
+    #decoded_body = nil
+    sender = params['sender']
+    subject = params['subject']
+    body_plain = params["body-plain"]
+    user = User.find_by_email  params["sender"]
+    if !user  
+      head 200 && return
+    end
+    
+    tags_array = params["Subject"].scan(/#\w+/)
+    
+    hashtags = tags_array.map do |tag|
+      Hashtag.first_or_create(title: tag)
+    end
 
-          head 200
+    url = /\b(([\w-]+:\/\/?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:<>"]\s]|\/)))/.match(params["body-plain"])
+    
+    bookmark = user.bookmarks.create(
+      url: params[:"body-plain"], 
+      hashtag_ids: hashtags.map(&:id))
+    
+    head 200
   end
 end
   
