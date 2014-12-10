@@ -30,6 +30,8 @@ gem 'erubis'
 gem 'haml'
 gem 'hpricot'
 gem 'ruby_parser'
+gem 'simple_hashtag'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

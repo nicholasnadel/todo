@@ -2,8 +2,10 @@ class Bookmark < ActiveRecord::Base
   belongs_to :user
   has_and_belongs_to_many :hashtags
 
-  validates :url, :format => URI::regexp(%w(http https)), presence: true
-  
+
+  # validates :url, :format => URI::regexp(%w(http https)), presence: true
+
+
   def tags_string
   	self.hashtags.map {|h| h.tag}.join(" ")
   end

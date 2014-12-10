@@ -1,4 +1,5 @@
 class Hashtag < ActiveRecord::Base
-  has_and_belongs_to_many :bookmarks
-
+	include SimpleHashtag::Hashtaggable
+	Hashtaggable_attribute :caption
+  has_and_belongs_to_many :bookmarks 	
 end

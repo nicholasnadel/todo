@@ -24,19 +24,24 @@ class IncomingController < ApplicationController
   end
 
   def create
-      decoded_body = nil
+      #decoded_body = nil
       sender = params['sender']
       subject = params['subject']
-      # body_plain = params["body-plain"]
+      body_plain = params["body-plain"]
       user = User.find_by_email  params["sender"]
           if !user  
             head 200 && return
           end
           url = /\b(([\w-]+:\/\/?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:<>"]\s]|\/)))/.match(params["body-plain"])
-          @bookmark = user.bookmarks.build(url: params[:body-plain])
+          @bookmark = user.bookmarks.build(url: params[:"body-plain"])
           @bookmark.save!
-          hashtags = /#\w+/.match(params["subject"])
+          @hashtags = /#\w+/.match(params["Subject"])
+          puts "Hashtag value: #{@hashtag}"
+          @hashtag = Hashtag.new(title: @hashtags)
+          @hashtag.save!
+                  head 200
+
           head 200
-    end
   end
+end
   

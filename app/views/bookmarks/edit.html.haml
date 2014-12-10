@@ -1,2 +1,8 @@
 %h1 Bookmarks#edit
 %p Find me in app/views/bookmarks/edit.html.erb
+
+.col-md-8
+  = form_for @bookmark do |f|
+    .form-group
+      = f.label :url
+      = f.text_field :url, class: 'form-control', placeholder: "Enter wiki title"
