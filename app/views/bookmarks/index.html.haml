@@ -1,6 +1,10 @@
 %h1 My Bookmarks
 - @bookmarks.each do |bookmark|
-  .bookmark
+  .jumbotron
     = link_to bookmark.url, bookmark
     = bookmark.hashtags.map(&:title).join(', ')
+    
+    
+    
+    
   
