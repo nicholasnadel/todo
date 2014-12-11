@@ -1,6 +1,9 @@
 class BookmarksController < ApplicationController
- 	before_filter :authorize, only: [:edit, :update, :destroy]
 	
+  def bookmarks_params
+    params.require(:bookmark).permit(:title, :tag_list)
+  end
+  
 	def index
 		if params[:tag]
 			@bookmarks = Bookmark.tagged_with(params[:tag])

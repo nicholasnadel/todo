@@ -31,6 +31,8 @@ gem 'haml'
 gem 'hpricot'
 gem 'ruby_parser'
 gem 'simple_hashtag'
+gem 'acts-as-taggable-on'
+
 
 
 # Use ActiveModel has_secure_password
